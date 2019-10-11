@@ -23,9 +23,9 @@
 
   <body>
 
-    <main role="main" class="container">
-      <article id="city-compare">
-        
+    <main role="main" class="container-fluid container mt-2">
+      <article id="city-compare" class="col-md-8">
+
         <fieldset>
           <label for="cityOne">Enter the first city name:</label>
           <input v-model="cityOne" id="cityOne" type="text">
@@ -36,8 +36,7 @@
           <input v-model="cityTwo" id="cityTwo" type="text">
         </fieldset>
 
-        <label>Number of characters in the shortest city:</label>
-        <p>{{result}}</p>
+        <h2 class="mt-2">Number of characters in the shortest city: {{result}}</h2>
 
       </article>
     </main>

@@ -1,7 +1,11 @@
-body {
-    padding-top: 5rem;
-  }
-  .starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
+
+article {
+  background-color: lightblue;
+  padding: 1em;
+  margin: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
