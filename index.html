@@ -24,23 +24,29 @@
   <body>
 
     <main role="main" class="container">
+      <article id="city-compare">
+        
+        <fieldset>
+          <label for="cityOne">Enter the first city name:</label>
+          <input v-model="cityOne" id="cityOne" type="text">
+        </fieldset>
 
-      <fieldset>
-        <label for="cityOne">Enter the first city name:</label>
-        <input v-model="cityOne" id="cityOne" type="text">
-      </fieldset>
+        <fieldset>
+          <label for="cityTwo">Enter the second city name:</label>
+          <input v-model="cityTwo" id="cityTwo" type="text">
+        </fieldset>
 
-      <fieldset class="mt-2">
-        <label for="cityTwo">Enter the second city name:</label>
-        <input v-model="cityTwo" id="cityTwo" type="text">
-      </fieldset>
+        <label>Number of characters in the shortest city:</label>
+        <p>{{result}}</p>
 
-      <label></label>
-
+      </article>
     </main>
 
     <!-- Vue Import -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+
+    <!-- Vue Component -->
+    <script src="city-compare.js"></script>
 
   </body>
 
